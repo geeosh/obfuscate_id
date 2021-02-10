@@ -61,7 +61,6 @@ module ObfuscateId
     def reload(options = nil)
       options = (options || {}).merge(no_obfuscated_id: true)
 
-      clear_aggregation_cache
       clear_association_cache
 
       fresh_object =
